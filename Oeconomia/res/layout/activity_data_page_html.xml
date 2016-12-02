@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Compare Button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            android:weightSum="90" >
+
+            <Button
+                android:id="@+id/B_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="65"
+                android:onClick="homeOnCLick"
+                android:text="@string/home" />
+
+            <Button
+                android:id="@+id/B_Graph"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="25"
+                android:onClick="onGraphClick"
+                android:text="@string/graph" />
+
+            <!-- android:onClick="compare_OnClick" -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/B_Favourites"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/B_Compare"
+            android:onClick="onFavouriteButtonClick" />
+
+        <TextView
+            android:id="@+id/tv_CountryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <!-- People section -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/B_People"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:onClick="peopleOnClick"
+                android:text="@string/people"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/wv_People1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Finance section -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/B_Finance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:onClick="financeOnClick"
+                android:text="@string/finance"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/wv_Finance1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Energy section -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="10" >
+
+            <Button
+                android:id="@+id/B_Energy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="center"
+                android:onClick="energyOnClick"
+                android:text="@string/energy"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/wv_Energy1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

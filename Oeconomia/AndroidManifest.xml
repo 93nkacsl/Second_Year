@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.groupF.androidminiprojectone"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.groupF.androidminiprojectone.Splash"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.CompareCountrySelector"
+            android:label="@string/title_activity_menu_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.CompareDataPage"
+            android:label="@string/title_activity_menu_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.DataPage"
+            android:label="@string/title_activity_menu_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.MenuPage"
+            android:label="@string/title_activity_menu_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.CountrySelector"
+            android:label="@string/title_activity_country_selector" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.Graph"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_graph" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.OptionsPage"
+            android:label="@string/title_activity_options_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.FavouritesPage"
+            android:label="@string/title_activity_favourites_page" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.CountrySelector2"
+            android:label="@string/title_activity_country_selector2" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.ScatterDiagram"
+            android:label="@string/title_activity_scatter_diagram" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.BarChart"
+            android:label="@string/title_activity_bar_chart" >
+        </activity>
+        <activity
+            android:name="com.groupF.androidminiprojectone.LineChart"
+            android:label="@string/title_activity_line_chart" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlOptionsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".OptionsPage" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvHelpTitle"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/bHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="homeOnClick"
+                android:text="Home" />
+
+            <TextView
+                android:id="@+id/tvOptionsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bHome"
+                android:text="@string/tv_change_theme_title" />
+
+            <ListView
+                android:id="@+id/lvThemes"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/tvOptionsTitle"/>
+
+            <Button
+                android:id="@+id/bSaveOptions"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lvThemes"
+                android:onClick="saveMe"
+                android:text="@string/button_Save" />
+
+
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/bSaveOptions"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/llForScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tvHelpTitle"
+                    android:orientation="vertical"
+                    android:weightSum="100" >
+
+                    <LinearLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:id="@+id/bQ1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onQ1ButtonClick"
+                            android:text="@string/tv_help_q1_title" />
+
+                        <TextView
+                            android:id="@+id/tvQ1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll1"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:id="@+id/bQ2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onQ2ButtonClick"
+                            android:text="@string/tv_help_q2_title" />
+
+                        <TextView
+                            android:id="@+id/tvQ2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/ll2"
+                        android:orientation="vertical"
+                        android:weightSum="100" >
+
+                        <Button
+                            android:id="@+id/bQ3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="onQ3ButtonClick"
+                            android:text="@string/tv_help_q3_title" />
+
+                        <TextView
+                            android:id="@+id/tvQ3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".MenuPage" >
+
+    <Button
+        android:id="@+id/B_Country"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:onClick="setOnclick"
+        android:text="Country"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/B_Favourites"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="Favourites"
+        android:onClick="favourites_OnClick"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/B_Graph"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:text="Graph"
+        android:onClick="graph_OnClick"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/B_Options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="Options"
+        android:textSize="20dp" 
+        android:onClick="options_OnClick"/>
+
+</LinearLayout>
